@@ -6,14 +6,13 @@
 }
 
 body {
-    background:rgb(51, 50, 50); /* cor fundo */
-    color:#ffffff ;  /* cor texto */
+    background: #000000; /* cor fundo */
+    color: #d2d2d2;  /* cor texto */
 }
 
 i {
-    color: rgb(255, 255, 255);
+    color: aqua;
     font-size: 20px; /* tamanho do texto */
-
 }
 
 #header {
@@ -22,81 +21,92 @@ i {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: black;
+    background: #222;
     padding: 8px 16px;
     z-index: 2;
 }
 
-.menu{
+.menu { 
     display: flex;
     align-items: center;
-    background:rgb(39, 39, 39) ;  /* cor fundo */
+    background: #5a5a5a; /* cor fundo */
     gap: 25px;
     list-style: none;
+}
+
+.menu-mobile {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid;
 
 }
 
-.menu-item { /* lista = li */
+.menu-item {
     width: 100%;
-
 }
 
-.menu-link {
+.menu-link { 
     display: flex;
     text-decoration: none;
-
 }
 
-.menu-texto{
+.menu-texto {
     font-size: 20px;
     text-transform: uppercase;
-
 }
 
-.menu-mobile .menu-link{
+.menu-mobile .menu-link {
     flex-direction: column;
     justify-content: center;
     padding: 50px 15px;
 
 }
-/* span = menu-texto */
-/* icone+ icone do bootstrap */
+
 .menu-link.active .menu-icone,
 .menu-link.active .menu-texto,
 .menu-link:hover .menu-icone,
 .menu-link:hover .menu-texto{
-    color:  white;
-    
-
+    color: #f3f3f3;
+    font-weight: 800;
 }
 
+/* não selecionados */
 .menu-icone,
-.menu-texto{
-    color: rgb(202, 204, 202);
-    
-    
-
+.menu-texto{ 
+    color: #797979;
+    font-weight: 400;
 }
 
-.menu-icone{
+/* .menu-link .menu-texto:hover,
+.menu-link .menu-icone:hover {
+    font-size: 22px;
+} */
+
+.menu-icone {
     font-size: 25px;
 }
 
-.menu-principal{
-    gap: 20px;
+.menu-principal {
+    gap: 20
+px;
 }
 
 .header-nav {
     display: none;
 }
 
-/* CSS RESPONSIVO */
-@media (min-width: 768px) {
+
+/* CSS Responsivo */
+@media (min-width: 768px) {  /* a partir de: 768px */
     #header {
         position: fixed;
-        border-bottom: 1px solid #faf3f3;
+        border-bottom: 1px solid #f3f3f3;
     }
+    .nav-mobile {
+        display: flex;
 
+    }
 }
-    
-    
+
