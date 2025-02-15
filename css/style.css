@@ -34,6 +34,12 @@ body {
     background: var(--bg-body); /* cor fundo */
     color: var(--cor-texto);  /* cor texto */
 }
+h1 {
+    font-size: 40px;
+    font-weight: 200;
+    font-family: ;
+
+}
 
 i {
     color: rgb(255, 255, 255);
@@ -127,7 +133,7 @@ i {
      font-size: 24px;
      color: var(--icone-tema);
      cursor: pointer;
-     transition: ease-in-out .4s;
+     transition: ease-in-out .3s;
 }
 /* HOME */
 
