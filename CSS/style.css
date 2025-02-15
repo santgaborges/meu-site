@@ -7,11 +7,11 @@
 
 body {
     background:rgb(51, 50, 50); /* cor fundo */
-    color:#a89999 ;  /* cor texto */
+    color:#ffffff ;  /* cor texto */
 }
 
 i {
-    color: aqua;
+    color: rgb(255, 255, 255);
     font-size: 20px; /* tamanho do texto */
 
 }
@@ -47,9 +47,56 @@ i {
 
 }
 
-.menu-texto {
+.menu-texto{
     font-size: 20px;
     text-transform: uppercase;
 
 }
 
+.menu-mobile .menu-link{
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 15px;
+
+}
+/* span = menu-texto */
+/* icone+ icone do bootstrap */
+.menu-link.active .menu-icone,
+.menu-link.active .menu-texto,
+.menu-link:hover .menu-icone,
+.menu-link:hover .menu-texto{
+    color:  white;
+    
+
+}
+
+.menu-icone,
+.menu-texto{
+    color: rgb(202, 204, 202);
+    
+    
+
+}
+
+.menu-icone{
+    font-size: 25px;
+}
+
+.menu-principal{
+    gap: 20px;
+}
+
+.header-nav {
+    display: none;
+}
+
+/* CSS RESPONSIVO */
+@media (min-width: 768px) {
+    #header {
+        position: fixed;
+        border-bottom: 1px solid #faf3f3;
+    }
+
+}
+    
+    
