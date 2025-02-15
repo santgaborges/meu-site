@@ -2,11 +2,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background:#d2d2d2; /* cor fundo */
-    color:#d2d2d2 ;  /* cor texto */
+    background:rgb(51, 50, 50); /* cor fundo */
+    color:#a89999 ;  /* cor texto */
 }
 
 i {
@@ -21,7 +22,34 @@ i {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: linear-gradient(to right, black, purple);
+    background: black;
     padding: 8px 16px;
     z-index: 2;
 }
+
+.menu{
+    display: flex;
+    align-items: center;
+    background:rgb(39, 39, 39) ;  /* cor fundo */
+    gap: 25px;
+    list-style: none;
+
+}
+
+.menu-item { /* lista = li */
+    width: 100%;
+
+}
+
+.menu-link {
+    display: flex;
+    text-decoration: none;
+
+}
+
+.menu-texto {
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
