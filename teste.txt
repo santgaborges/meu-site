@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Monomakh&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shafarik&display=swap');
 
 
 /* Definir cores tema Dark */
@@ -86,14 +86,14 @@ body {
 h1 {
     font-size: 40px;
     font-weight: 200;
-    font-family: "Belleza", sans-serif;
+    font-family: "Atkinson Hyperlegible Next", serif;
     letter-spacing: 1px;
 }
 
 h2 {
     font-size: 35px;
     font-weight: 600;
-    font-family: "Belleza", sans-serif;
+    font-family: "Roboto", serif;
     text-align: center;
     text-transform: uppercase;
 }
@@ -101,14 +101,14 @@ h2 {
 h3 {
     font-size: 30px;
     font-weight: 400;
-    font-family: "Belleza", sans-serif;
+    font-family: "Roboto", serif;
     text-align: left;
     text-transform: uppercase;
 }
 
 h4 {
     font-size: 20px;
-    font-family:"Roboto", serif;
+    font-family: "Atkinson Hyperlegible Next", serif;
     font-weight: 300;
     text-align: left;
 }
@@ -523,53 +523,6 @@ a {
 
 /* Forms */
 
-.form-contato {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    background: #9A9A9C;
-    border-radius: 8px;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
-}
-
-.form-contato label {
-    font-weight: bold;
-    color: #222;
-    font-family: "Roboto", serif;
-    font-size: 16px;
-}
-
-.form-contato input,
-.form-contato textarea {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid var(--cor-borda-secundaria);
-    border-radius: 6px;
-    color: var(--cor-texto);
-    background: var(--bg-body);
-    font-size: 16px;
-    outline: none;
-    transition: 0.3s ease-in-out;
-}
-
-.form-contato input:focus,
-.form-contato textarea:focus {
-    border-color: var(--cor-texto);
-    box-shadow: 0 0 5px #3b3b3b;
-}
-
-.form-contato textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-
-
-
 
 
 /* Roda Pé = footer */
@@ -595,21 +548,21 @@ footer a:hover {
 }
 
 
-/* Estilização do Carrossel */
+/* Carousel */
 
 .projetos h2 {
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .carousel {
-    width: 80%; /* Ajustável conforme o layout */
-    max-width: 70vw;
-    height: 60vh;
+    width: 80%;
+    max-width: 70vw; /* viewport width */
+    height: 40vh;
     overflow: hidden;
     position: relative;
     border-radius: 12px;
-    margin: 20px auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20x auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .slides {
@@ -624,52 +577,7 @@ footer a:hover {
 
 .slide img {
     width: 100%;
-    height: 60vh;
-    object-fit: cover;
-    border-radius: 12px;
 }
-
-/* Oculta os radio buttons */
-.carousel input { 
-    display: none; 
-}
-
-/* Muda o slide com os radio buttons */
-#slide1:checked ~ .slides { transform: translateX(0); }
-#slide2:checked ~ .slides { transform: translateX(-33.33%); }
-#slide3:checked ~ .slides { transform: translateX(-66.66%); }
-
-/* Botões de navegação */
-.navigation {
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 8px;
-}
-
-.navigation label {
-    width: 12px;
-    height: 12px;
-    background: var(--primary-color, #fff);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
-    opacity: 0.6;
-}
-
-.navigation label:hover, 
-#slide1:checked ~ .navigation label[for="slide1"],
-#slide2:checked ~ .navigation label[for="slide2"],
-#slide3:checked ~ .navigation label[for="slide3"]  {
-    background: orange;
-    opacity: 1;
-}
-
-
-
-/* Fim CSS Carousel */
 
 /* CSS Responsivo */
 @media (min-width: 768px) {
